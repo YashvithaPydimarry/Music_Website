@@ -1,0 +1,201 @@
+.robot
+{
+    height: 800px;
+    width: 800px;
+    border: 2px solid transparent;
+}
+.face
+{
+    height: 150px;
+    width: 200px;
+    background-color:rgb(181, 72, 72);
+    border-radius: 100px 100px 0 0;
+    margin:auto;
+    margin-top: 100px;
+    transform: rotate 1s linear;
+}
+.video:hover .face
+{
+    transform: rotate(45deg);
+    animation: moveface 2s infinite;
+}
+@keyframes moveface
+{
+    0%{ transform: rotate(0deg);}
+    25%{ transform: rotate(10deg);}
+    50%{ transform: rotate(0deg);}
+    75%{ transform: rotate(-10deg);}
+    100%{ transform: rotate(0deg);}
+}
+
+.eyes
+{
+    display: flex;
+    position:absolute;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.leye, .reye
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: gray;
+}
+.hands
+{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: -28%;
+}
+.mike
+{
+    margin-top: -17%;
+}
+.ball
+{
+    height: 40px;
+    width: 40px;
+    background-color:rgb(84, 83, 83);
+    border:1px solid white;
+    border-radius: 50%;
+    margin: auto;
+}
+.handle
+{
+    height: 80px;
+    width: 20px;
+    background-color: rgb(84, 83, 83);
+    border: 1px solid white;
+    margin: auto;
+}
+.lhands
+{
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.lhand1
+{
+    height: 120px;
+    width: 40px;
+    background-color:rgb(118, 117, 117);
+    /* margin-top: 10%; */
+    border-radius: 100px;
+    rotate: -30deg;
+}
+.lhand2
+{
+    height: 100px;
+    width: 40px;
+    background-color:rgb(118, 117, 117);
+    margin-top: 15%;
+    border-radius: 100px;
+    rotate: 30deg;
+    transform-origin: top-center;
+}
+.rhands
+{
+    display: flex;
+    width: 90px;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+.rhand1
+{
+    height: 120px;
+    width: 40px;
+    background-color:rgb(118, 117, 117);
+    /* margin-top: 12%; */
+    border-radius: 100px;
+    rotate: 30deg;
+}
+.rhand2
+{
+    height: 100px;
+    width: 40px;
+    background-color:rgb(118, 117, 117);
+    margin-top: 15%;
+    border-radius: 100px;
+    rotate: -30deg;
+}
+.stomach
+{
+    height: 220px;
+    width: 200px;
+    margin: auto;
+    margin-top: 1%;
+    background-color:rgb(181, 72, 72);
+    border-radius: 0 0 25% 25%;
+    transform: rotate 1s linear;
+    z-index: -1;
+}
+.body
+{
+    margin-top: 3%;
+    transform: rotate 1s linear;
+}
+.video:hover .body
+{
+    transform: rotate(-20deg);
+    animation: movebody 2s infinite;
+}
+@keyframes movebody
+{
+    0%{ transform: rotate(0deg);}
+    25%{ transform: rotate(-10deg);}
+    50%{ transform: rotate(0deg);}
+    75%{ transform: rotate(10deg);}
+    100%{ transform: rotate(0deg);}
+} 
+.legs
+{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: auto;
+    margin-top: 90px;
+    /* transform: translate 1s linear; */
+}
+/* .robot:hover .legs
+{
+    transform: translate(200px);
+    animation: movelegs 2s infinite;
+}
+@keyframes movelegs
+{
+    0%{ transform: translate(0px);}
+    25%{ transform:translate(50px) ;}
+    50%{ transform: translate(0px);}
+    75%{ transform: translate(-50px);}
+    100%{ transform: translate(0px);}
+} */
+.lleg, .rleg
+{
+    height: 120px;
+    width: 40px;    
+    background-color:rgb(118, 117, 117);
+    border-radius: 100px;
+    transform: rotate 1s linear;
+}
+.video:hover .lleg ,.video:hover .rleg
+{
+    transform: rotate(60deg);
+    transform-origin: bottom center;
+    animation: moveleg 2s infinite;
+}
+@keyframes moveleg
+{
+    0%{ transform: rotate(0deg); transform-origin: bottom center;}
+    25%{ transform:rotate(20deg) ; transform-origin: bottom center;}
+    50%{ transform: rotate(0deg); transform-origin: bottom center;}
+    75%{ transform: rotate(-20deg); transform-origin: bottom center;}
+    100%{ transform: rotate(0deg); transform-origin: bottom center;}
+}
+

@@ -1,0 +1,144 @@
+.robot
+{
+    height: 800px;
+    width: 800px;
+    border: 2px solid transparent;
+}
+.face
+{
+    height: 150px;
+    width: 200px;
+    background-color:deeppink;
+    border-radius: 100px 100px 0 0;
+    margin:auto;
+    margin-top: 100px;
+    transform: rotate 1s linear;
+}
+.video:hover .face
+{
+    transform: rotate(30deg);
+    animation: moveface 2s infinite;
+}
+@keyframes moveface
+{
+    0%{ transform: rotate(0deg);}
+    25%{ transform:rotate(40deg);}
+    50%{ transform: rotate(0deg);}
+    75%{ transform: rotate(-40deg);}
+    100%{ transform: rotate(0deg);}
+}
+
+.eyes
+{
+    display: flex;
+    position:absolute;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.leye, .reye
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: gray;
+}
+.body
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    margin:auto;
+    margin-top: 20px;
+    transform: translate 1s linear;
+}
+.video:hover .body
+{
+    transform: translate(200px);
+    animation: movebody 2s infinite;
+}
+@keyframes movebody
+{
+    0%{ transform: translate(0px);}
+    25%{ transform:translate(-100px) ;}
+    50%{ transform: translate(0px);}
+    75%{ transform: translate(100px);}
+    100%{ transform: translate(0px);}
+}
+.lhand, .rhand
+{
+    height: 120px;
+    width: 40px;
+    background-color:gray;
+    margin-top: 10%;
+    border-radius: 100px;
+    transform: rotate 1s linear;
+}
+.video:hover .lhand ,.video:hover .rhand
+{
+    transform: rotate(60deg);
+    transform-origin: top center;
+    animation: movehands 2s infinite;
+}
+@keyframes movehands
+{
+    0%{ transform: rotate(0deg); transform-origin: top center;}
+    25%{ transform:rotate(-60deg) ; transform-origin: top center;}
+    50%{ transform: rotate(0deg); transform-origin: top center;}
+    75%{ transform: rotate(60deg); transform-origin: top center;}
+    100%{ transform: rotate(0deg); transform-origin: top center;}
+}
+.stomach
+{
+    height: 220px;
+    width: 200px;
+    background-color:deeppink;
+    border-radius: 0 0 25% 25%;
+}
+.legs
+{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin: auto;
+    margin-top: 20px;
+    transform: translate 1s linear;
+}
+.video:hover .legs
+{
+    transform: translate(200px);
+    animation: movelegs 2s infinite;
+}
+@keyframes movelegs
+{
+    0%{ transform: translate(0px);}
+    25%{ transform:translate(-100px) ;}
+    50%{ transform: translate(0px);}
+    75%{ transform: translate(100px);}
+    100%{ transform: translate(0px);}
+}
+.lleg, .rleg
+{
+    height: 120px;
+    width: 40px;
+    background-color:gray;
+    border-radius: 100px;
+    transform: rotate 1s linear;
+}
+.video:hover .lleg ,.video:hover .rleg
+{
+    transform: rotate(60deg);
+    transform-origin: top center;
+    animation: moveleg 2s infinite;
+}
+@keyframes moveleg
+{
+    0%{ transform: rotate(0deg); transform-origin: top center;}
+    25%{ transform:rotate(-60deg) ; transform-origin: top center;}
+    50%{ transform: rotate(0deg); transform-origin: top center;}
+    75%{ transform: rotate(60deg); transform-origin: top center;}
+    100%{ transform: rotate(0deg); transform-origin: top center;}
+}
+
